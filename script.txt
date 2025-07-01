@@ -1,0 +1,4 @@
+ git clone <repository link>
+ git add . (. stands for everything)
+ git commit -m "commit message"
+ git push (push all changes)

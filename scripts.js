@@ -1,4 +1,4 @@
-console.log("working")
+ console.log("working")
 let age=21
 if(age<18){
     console.log( "minor")
@@ -15,8 +15,7 @@ for( let i=1;i<11;i=i+1)
         console.log ( "number",i,"odd")
         
     }
-
-    function greet( name,company){
+ function greet( name,company){
         console.log(  " hi" +  name + " welcome to "+company);
     }
 

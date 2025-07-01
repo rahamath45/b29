@@ -1,0 +1,53 @@
+ .container{
+    border: 3px solid black ;
+    margin:50px;
+    width:210px;
+    padding: 10px;
+    height:60vh;
+ }
+ img{
+    width: 200px;
+    height:200px;
+ }
+ .card-para{
+    font-size:x-small;
+    padding:10px;
+ }
+ .buy-btn{
+    background-color: black;
+    color: blueviolet;
+ }
+ .later-btn{
+    background-color: black;
+    color: gold;
+ }
+ .btn{
+    border:none;
+    padding:10px;
+    border-radius:20px;
+    cursor:pointer;
+ }
+ #book{
+    background-color: aqua;
+ }
+ #software{
+    background-color: aquamarine;
+ }
+ a:link{
+    color: chocolate;
+ }
+ a:visited{
+    color:orchid;
+ }
+ a:hover{
+    color: maroon;
+ }
+ a:active{
+    color:limegreen;
+ }
+ .block{
+    display:block;
+ }
+ .inline{
+    display:inline;
+ }

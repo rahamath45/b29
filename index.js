@@ -15,7 +15,7 @@
  console.log(" split-arr",splitArr);
  const input = "praven";
  const inputarr = input.split("");
-for( let i=0;i<inputarr.length;i++ ){
+ for( let i=0;i<inputarr.length;i++ ){
     console.log(inputarr[i]);
 }
 
@@ -33,7 +33,7 @@ for( let i=0;i<inputarr.length;i++ ){
  });
 
 const filterarr = mrfarr.filter(( value,index,accarr)=>{
-    return valule !=5;
+    return value !=5;
 });
 console.log(filterarr);
 
@@ -43,6 +43,4 @@ console.log(filterarr);
   for( let i=0;i<a.length;i++){
       console.log(a[i]);
   }
- 
-
  

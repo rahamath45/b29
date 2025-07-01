@@ -13,4 +13,3 @@
 calculator( "+",10,10);
 calculator( "-",10,10);
 calculator( "*",10,10);
-    
