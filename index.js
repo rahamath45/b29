@@ -43,4 +43,12 @@ console.log(filterarr);
   for( let i=0;i<a.length;i++){
       console.log(a[i]);
   }
- 
+  let x =2
+  if(x%2!==0 && x==8,10,12){
+      console.log("31")
+  }else if(x==2){
+      console.log("28")
+  }else{
+      console.log("30")
+  }
+  
