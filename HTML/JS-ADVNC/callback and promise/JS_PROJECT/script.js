@@ -20,7 +20,7 @@ searchContainer.innerHTML=`
 <form class="flex  items-center gap-2 flex-row ">
 <input type="search" id="search-input" class="focus:outline-none p-4 bg-slate-200 rounded-md w-[70%]" placeholder="Search by students name"/>
 <button class="bg-blue-500 p-2 w-36 rounded-sm text-black font-semibold">search</button>
-</form>
+</form> 
 `
 
  mainContainer.append(formContainer,searchContainer,listContainer);
@@ -34,7 +34,7 @@ let searchInput=document.getElementById("search-input");
 function removeInputField(){
     nameInput.value="";
     batchInput.value="";
-    courseInput.value="";
+    courseInput.value=""; 
 }
 let students_list=[]
  formContainer.addEventListener("submit", (e)=>{
@@ -59,7 +59,7 @@ if(searchName==""){
 }
 const searchstudents= filterSearchedStudents(searchName);
 if(searchstudents.length==0){
-    return;
+    return;  
 }
 renderAllstudentsCard(searchstudents)
 });
