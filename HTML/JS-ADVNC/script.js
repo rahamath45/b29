@@ -101,3 +101,63 @@ return data})
 .catch((err)=>{
     console.log(err)
 })
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+let allNames = ["moorthy"];
+//function which check for the name in allNames=[]
+//if we already have a name rej (username already exist)
+//else username verified sucessfully
+function verifyData(username){
+    return new Promise((res, rej)=>{
+        console.log("normalizedName : ", username)
+        setTimeout(()=>{
+            if(allNames.includes(username)){
+               rej({error:"username already taken"}) 
+            } else {
+                res({status:"success", response:"User verified sucessfully", username:username})
+            }
+        }, 2000)
+    })
+}
+
+//if array exceed length 5 na reject or else updated the data 
+function updateToDB(username){
+    return new Promise((res, rej)=>{
+        setTimeout(()=>{
+                   if(allNames.length >=5) {
+            rej({error:"Db limit exceeded"})
+        }else{
+            allNames.push(username)
+            res({status:"success", response :"User added to the DB", data:allNames})
+        }
+        }, 2000)
+    })
+}
+function normalizeData(name){
+    return name.toLowerCase();
+}
+
+//async and await 
+async function updatedUserToDB(name){
+    try{
+        let normalizedUsername = normalizeData(name)
+        let result = await verifyData(normalizedUsername);
+        console.log("Verify", result)
+        let dbResponse = await updateToDB(result.username)
+        console.log("DB", dbResponse)
+    }catch(err){
+        console.log(err)
+    }
+}
+
+ // updatedUserToDB("moorthy");
+
+verifyData("Sanjay").then((data)=> {
+console.log(data);
+return data.username})
+ .then((data)=> updateToDB(data))
+.then((result)=>console.log(result))
+.catch((err)=>{
+   console.log(err)
+})
