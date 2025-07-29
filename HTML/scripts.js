@@ -21,3 +21,9 @@ for( let i=1;i<11;i=i+1)
 
     greet(" nisha","guvi")
     greet( " ansari","global")
+
+
+
+
+
+    

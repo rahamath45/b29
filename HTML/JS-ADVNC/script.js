@@ -151,13 +151,35 @@ async function updatedUserToDB(name){
     }
 }
 
- // updatedUserToDB("moorthy");
+  updatedUserToDB("moorthy");
 
-verifyData("Sanjay").then((data)=> {
-console.log(data);
-return data.username})
- .then((data)=> updateToDB(data))
-.then((result)=>console.log(result))
-.catch((err)=>{
-   console.log(err)
-})
+ // verifyData("Sanjay").then((data)=> {
+ // console.log(data);
+ // return data.username})
+ //.then((data)=> updateToDB(data))
+// .then((result)=>console.log(result))
+ //.catch((err)=>{
+ //   console.log(err)
+ // })
+ let Name =[];
+function checkdata(data){
+  return new Promise((res, rej)=>{
+       if( data =="nisha"){
+           Name.push(data);
+             res({ married: Name}  )
+       }else{
+            rej({noneexist : Name})
+       }
+  })
+}
+
+ async function checkUser(name){
+       try{
+        let output = await checkdata(name);
+        console.log(output);
+       }catch(err){
+           console.log(err)
+       }
+}
+
+checkUser("ola")

@@ -1,0 +1,28 @@
+ .cardList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    gap:2rem;
+ }
+ .card{
+    width: 150px;
+    height:150px;
+    padding: 10px;
+    background-color: #ccc;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+  justify-content: space-between;
+}
+ .card-image{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+ }
+ .card-name{
+   text-align: center;
+   font-size: larger;
+   font-weight: 900;
+ }
