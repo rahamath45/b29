@@ -16,7 +16,7 @@
  const input = "praven";
  const inputarr = input.split("");
  for( let i=0;i<inputarr.length;i++ ){
-    console.log(inputarr[i]);
+   // console.log(inputarr[i]);
 }
 
  //slice( stratindex,endindex)
